@@ -1,12 +1,12 @@
 
 total = 0
-current = None
+previous = None
 
 with open("input.txt") as lines:
     for line in lines:
         number = line.rstrip("\n")
-        if current is None or number > current:
+        if previous is None or number > previous:
             total += 1
-        current = number
+        previous = number
 
 print(total)
