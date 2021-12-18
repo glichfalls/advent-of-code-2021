@@ -4,7 +4,6 @@ def get_bits(nums, pos):
     bits = [[], []]
     for num in nums:
         bits[0 if num[pos] == "0" else 1].append(num)
-    print(pos, bits)
     return bits
 
 
@@ -38,4 +37,4 @@ print(oxygen, co2)
 
 result = int(oxygen[0], 2) * int(co2[0], 2)
 
-print("result: "  + str(result))
+print("result: " + str(result))
